@@ -3,8 +3,8 @@
 # Verifica errori con: ghostty +validate-config
 
 # ── Tema ────────────────────────────────────────────────────────────
-# Stesso tema del tuo LazyVim (catppuccin). Elenco temi: ghostty +list-themes
-theme = dark:Catppuccin Mocha,light:Catppuccin Latte
+# Stesso tema di LazyVim (gruvbox). Elenco temi: ghostty +list-themes
+theme = dark:Gruvbox Dark Hard,light:Gruvbox Light
 minimum-contrast = 1.1
 
 # ── Font ────────────────────────────────────────────────────────────
