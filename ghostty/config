@@ -1,0 +1,60 @@
+# ~/.config/ghostty/config
+# Dopo aver modificato: Cmd+Shift+, per ricaricare la config.
+# Verifica errori con: ghostty +validate-config
+
+# ── Tema ────────────────────────────────────────────────────────────
+# Stesso tema del tuo LazyVim (catppuccin). Elenco temi: ghostty +list-themes
+theme = dark:Catppuccin Mocha,light:Catppuccin Latte
+minimum-contrast = 1.1
+
+# ── Font ────────────────────────────────────────────────────────────
+# Installa prima il font: brew install --cask font-jetbrains-mono-nerd-font
+# (Ghostty ha comunque le icone Nerd Font integrate come fallback)
+font-family = "JetBrainsMono Nerd Font"
+font-size = 14
+font-thicken = true
+adjust-cell-height = 10%
+
+# ── Finestra ────────────────────────────────────────────────────────
+# Tab integrate nella barra del titolo, stile app Mac
+macos-titlebar-style = tabs
+window-padding-x = 12
+window-padding-y = 8
+window-padding-balance = true
+window-save-state = always
+window-colorspace = display-p3
+
+# Trasparenza con sfocatura dello sfondo (togli le due righe per sfondo pieno)
+background-opacity = 0.92
+background-blur-radius = 20
+
+# ── Split ───────────────────────────────────────────────────────────
+# I pannelli non attivi si attenuano, così vedi subito dove sei
+unfocused-split-opacity = 0.80
+
+# ── Cursore e mouse ─────────────────────────────────────────────────
+cursor-style = block
+cursor-style-blink = false
+mouse-hide-while-typing = true
+copy-on-select = clipboard
+
+# ── Shell (zsh) ─────────────────────────────────────────────────────
+# Salto tra prompt, nuova tab nella stessa cartella, titolo automatico
+shell-integration = zsh
+shell-integration-features = cursor,sudo,title
+
+# ── Tastiera ────────────────────────────────────────────────────────
+# Option come Alt: utile per le scorciatoie in Neovim e nella shell
+macos-option-as-alt = true
+
+# ── Quick terminal ──────────────────────────────────────────────────
+# Terminale a tendina richiamabile da qualsiasi app con Cmd+` .
+# La prima volta macOS chiede il permesso di Accessibilità.
+quick-terminal-position = top
+quick-terminal-screen = mouse
+quick-terminal-animation-duration = 0.15
+keybind = global:cmd+grave_accent=toggle_quick_terminal
+
+# ── Shader opzionale (effetti stile CRT/glow) ───────────────────────
+# Scarica uno shader .glsl e decommenta, ad esempio:
+# custom-shader = ~/.config/ghostty/shaders/cursor_smear.glsl
