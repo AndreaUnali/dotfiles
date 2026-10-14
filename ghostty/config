@@ -11,7 +11,7 @@ minimum-contrast = 1.1
 # Installa prima il font: brew install --cask font-jetbrains-mono-nerd-font
 # (Ghostty ha comunque le icone Nerd Font integrate come fallback)
 font-family = "JetBrainsMono Nerd Font"
-font-size = 14
+font-size = 8
 font-thicken = true
 adjust-cell-height = 10%
 
