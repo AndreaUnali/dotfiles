@@ -45,7 +45,7 @@ shell-integration-features = cursor,sudo,title
 
 # ── Tastiera ────────────────────────────────────────────────────────
 # Option come Alt: utile per le scorciatoie in Neovim e nella shell
-macos-option-as-alt = true
+macos-option-as-alt = left
 
 # ── Quick terminal ──────────────────────────────────────────────────
 # Terminale a tendina richiamabile da qualsiasi app con Cmd+` .
